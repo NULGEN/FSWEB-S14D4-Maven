@@ -18,12 +18,15 @@ public class Coke extends ProductForSale {
     }
 
     @Override
-    public void showDetails() {
-        System.out.println("\"Coke{\" +\n" +
-                "mililiter='\" + mililiter + '\\'' +\n" +
-                "                \"type='\" + type + '\\'' +\n" +
-                "                \", price=\" + price +\n" +
-                "                \", description='\" + description + '\\'' +\n" +
-                "                '}';");
+    public String toString() {
+        return "Coke{" +
+                "miliLiter=" + miliLiter +
+                '}';
     }
+
+    @Override
+    public void showDetails() {
+        System.out.println(super.toString()+this);
+    }
+
 }

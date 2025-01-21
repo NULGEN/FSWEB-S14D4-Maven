@@ -6,7 +6,7 @@ public class Bread extends ProductForSale {
 
     public Bread(String type, double price, String description) {
         super(type, price, description);
-        this.breadType = breadType;
+
     }
 
     public Bread(String type, double price, String description, String breadType) {
@@ -16,13 +16,13 @@ public class Bread extends ProductForSale {
 
     @Override
     public void showDetails() {
-        System.out.println("\"Bread{\" +\n" +
-                                "breadType='\" + breadType + '\\'' +\n" +
-                "                \"type='\" + type + '\\'' +\n" +
-                "                \", price=\" + price +\n" +
-                "                \", description='\" + description + '\\'' +\n" +
-                "                '}';");
+        System.out.println(super.toString()+ this);
     }
 
-
+    @Override
+    public String toString() {
+        return "Bread{" +
+                "breadType='" + breadType + '\'' +
+                '}';
+    }
 }

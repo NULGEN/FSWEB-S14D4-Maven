@@ -14,11 +14,22 @@ public class Chocolate extends  ProductForSale{
 
     @Override
     public void showDetails() {
-        System.out.println("\"Coke{\" +\n" +
-                "ChocolateType='\" + chocolateType + '\\'' +\n" +
-                "                \"type='\" + type + '\\'' +\n" +
-                "                \", price=\" + price +\n" +
-                "                \", description='\" + description + '\\'' +\n" +
-                "                '}';");
+        System.out.println(super.toString()+this);
     }
+
+    @Override
+    public String toString() {
+        return "Chocolate{" +
+                "chocolateType='" + chocolateType + '\'' +
+                '}';
+    }
+//    @Override
+//    public void showDetails() {
+//        System.out.println("\"Coke{\" +\n" +
+//                "ChocolateType='\" + chocolateType + '\\'' +\n" +
+//                "                \"type='\" + type + '\\'' +\n" +
+//                "                \", price=\" + price +\n" +
+//                "                \", description='\" + description + '\\'' +\n" +
+//                "                '}';");
+//    }
 }

@@ -7,7 +7,8 @@ public class Store {
         Chocolate chocolate = new Chocolate("bitter", 10, "Ülker" );
         Coke coke = new Coke("light", 20, "bottle");
         Bread bread = new Bread("ekşi maya", 30, "lezzetli");
-       ProductForSale[] productForSale = {chocolate, coke, bread};
+        ProductForSale[] productForSale = {chocolate, coke, bread};
+        listProducts(productForSale);
     }
 
     public static void listProducts(ProductForSale[] products) {
